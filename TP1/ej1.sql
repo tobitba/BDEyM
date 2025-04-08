@@ -98,4 +98,5 @@ AND p1.BoatId = (
 		FROM Boat
 		WHERE ToDate IS NULL
 	  )
-));
+))
+	AND s1.LaneId <> s2.LaneId;
